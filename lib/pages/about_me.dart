@@ -43,7 +43,7 @@ class AboutMePage extends StatelessWidget {
                           padding: const EdgeInsets.only(right: 5),
                           child: Text(
                             "Olá ",
-                            style: Theme.of(context).textTheme.headline4,
+                            style: Theme.of(context).textTheme.headline5,
                           ),
                         ),
                         SizedBox(

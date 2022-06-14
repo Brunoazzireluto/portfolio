@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:port/pages/find_me.dart';
+import 'package:port/pages/git_tatus.dart';
 import 'package:port/pages/knowledge.dart';
+import 'package:port/pages/study_now.dart';
 import 'package:port/utils/themes.dart';
 import './pages/about_me.dart';
 
@@ -16,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: darkColorScheme,
         textTheme: ThemeData.light().textTheme.copyWith(
             headline4: const TextStyle(
-                fontFamily: "Fjalla One", fontSize: 30, color: Colors.black),
+                fontFamily: "Fjalla One", fontSize: 30, color: Colors.white),
             headline5: const TextStyle(
                 fontFamily: "Fjalla One", fontSize: 30, color: Colors.black),
             headline6: const TextStyle(
@@ -62,19 +65,20 @@ class Port extends StatelessWidget {
           controller: controller,
           scrollDirection: Axis.vertical,
           children: [
+            StudyNowPage(Height: availableHeight, Width: mediaQuery.size.width),
+            AboutMePage(Height: availableHeight, Width: mediaQuery.size.width),
             KnowledgePage(
                 Height: availableHeight, Width: mediaQuery.size.width),
-            AboutMePage(Height: availableHeight, Width: mediaQuery.size.width),
-            Center(
-                child: Container(
-              height: 200,
-              width: 200,
-              color: Colors.greenAccent,
-              child: const Text('Olá'),
-            )),
+            FindMePage(Height: availableHeight, Width: mediaQuery.size.width),
+            GitStatus(Height: availableHeight, Width: mediaQuery.size.width),
           ],
         ),
       ),
     );
   }
 }
+
+
+// pensar como vai implementar os projetos.
+// primeira ideia:
+  // https://github.com/anuraghazra/github-readme-stats

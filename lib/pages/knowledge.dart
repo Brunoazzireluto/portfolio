@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:port/components/know_card.dart';
-import "package:simple_icons/simple_icons.dart";
 
 class KnowledgePage extends StatelessWidget {
   final double Height;
@@ -14,19 +13,19 @@ class KnowledgePage extends StatelessWidget {
       children: [
         Container(
           width: Width,
-          height: Height / 11,
+          height: Height / 8,
           padding: const EdgeInsets.symmetric(vertical: 10),
           child: Center(
               child: Text(
             'Linguagens e Ferramentas',
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.headline4,
           )),
         ),
         SizedBox(
-            height: Height / 1.1,
+            height: Height / 2,
             width: Width,
             child: GridView.count(
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               crossAxisCount: 4,
               padding: const EdgeInsets.symmetric(horizontal: 10),
               crossAxisSpacing: 10,
@@ -82,6 +81,15 @@ class KnowledgePage extends StatelessWidget {
                         'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg')
               ],
             )),
+        Padding(
+          padding: const EdgeInsets.only(top: 20),
+          child: SizedBox(
+            width: Width,
+            height: Height / 4,
+            child: Image.network(
+                'https://media4.giphy.com/media/dMLmQfCO7lCA2gX3tw/giphy.gif?cid=790b76119a32c7e1cde9ec2e4419478dd501ee0171e1bfbf&rid=giphy.gif&ct=s'),
+          ),
+        )
       ],
     );
   }
