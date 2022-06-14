@@ -19,7 +19,7 @@ class AboutMePage extends StatelessWidget {
           children: [
             SizedBox(
               width: Width,
-              height: (Height / 2) - 2,
+              height: (Height / 3) - 2,
               child: Image.network(
                   "https://media0.giphy.com/media/ejyRYttU1toqHjNZOA/giphy.gif?cid=ecf05e47xzcqymp5fxqujbpqcputq2bqzmqns2k2vxg5h95c&rid=giphy.gif&ct=s"),
             ),
@@ -30,7 +30,7 @@ class AboutMePage extends StatelessWidget {
             ),
             Container(
               width: Width,
-              height: Height / 2,
+              height: Height / 1.5,
               color: Theme.of(context).colorScheme.tertiary,
               child: Column(
                 children: [
@@ -55,7 +55,7 @@ class AboutMePage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: Height / 2.6,
+                    height: Height / 2,
                     width: Width,
                     child: Padding(
                       padding:

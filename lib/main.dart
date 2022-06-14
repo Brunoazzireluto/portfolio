@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
             headline5: const TextStyle(
                 fontFamily: "Fjalla One", fontSize: 30, color: Colors.black),
             headline6: const TextStyle(
-                fontFamily: "Fjalla One", fontSize: 20, color: Colors.black),
+                fontFamily: "Fjalla One", fontSize: 20, color: Colors.white),
             bodyText2: const TextStyle(
                 fontFamily: "Prompt", fontSize: 18, color: Colors.black)));
   }
@@ -62,9 +62,9 @@ class Port extends StatelessWidget {
           controller: controller,
           scrollDirection: Axis.vertical,
           children: [
-            AboutMePage(Height: availableHeight, Width: mediaQuery.size.width),
             KnowledgePage(
                 Height: availableHeight, Width: mediaQuery.size.width),
+            AboutMePage(Height: availableHeight, Width: mediaQuery.size.width),
             Center(
                 child: Container(
               height: 200,

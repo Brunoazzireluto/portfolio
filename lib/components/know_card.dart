@@ -14,7 +14,10 @@ class KnowCardSvg extends StatelessWidget {
         child: GlassMorphism(
           start: 0.1,
           end: 0.4,
-          child: SvgPicture.network(svgLink),
+          child: Padding(
+            padding: const EdgeInsets.all(5),
+            child: SvgPicture.network(svgLink),
+          ),
         ));
   }
 }
