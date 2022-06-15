@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:port/pages/find_me.dart';
 import 'package:port/pages/git_tatus.dart';
 import 'package:port/pages/knowledge.dart';
+import 'package:port/pages/projets.dart';
 import 'package:port/pages/study_now.dart';
 import 'package:port/utils/themes.dart';
 import './pages/about_me.dart';
@@ -65,12 +66,13 @@ class Port extends StatelessWidget {
           controller: controller,
           scrollDirection: Axis.vertical,
           children: [
-            StudyNowPage(Height: availableHeight, Width: mediaQuery.size.width),
             AboutMePage(Height: availableHeight, Width: mediaQuery.size.width),
             KnowledgePage(
                 Height: availableHeight, Width: mediaQuery.size.width),
             FindMePage(Height: availableHeight, Width: mediaQuery.size.width),
             GitStatus(Height: availableHeight, Width: mediaQuery.size.width),
+            StudyNowPage(Height: availableHeight, Width: mediaQuery.size.width),
+            ProjectPage(height: availableHeight, width: mediaQuery.size.width),
           ],
         ),
       ),

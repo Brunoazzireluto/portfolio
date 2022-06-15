@@ -36,7 +36,7 @@ class KnowCardIcon extends StatelessWidget {
           end: 0.4,
           child: Icon(
             icon,
-            size: 140,
+            size: 80,
           ),
         ));
   }
