@@ -46,6 +46,7 @@ class Port extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
+    final width = mediaQuery.size.width;
     final PageController controller = PageController();
 
     final PreferredSizeWidget appBar = AppBar(
@@ -66,13 +67,14 @@ class Port extends StatelessWidget {
           controller: controller,
           scrollDirection: Axis.vertical,
           children: [
-            AboutMePage(Height: availableHeight, Width: mediaQuery.size.width),
-            KnowledgePage(
-                Height: availableHeight, Width: mediaQuery.size.width),
-            FindMePage(Height: availableHeight, Width: mediaQuery.size.width),
-            GitStatus(Height: availableHeight, Width: mediaQuery.size.width),
-            StudyNowPage(Height: availableHeight, Width: mediaQuery.size.width),
-            ProjectPage(height: availableHeight, width: mediaQuery.size.width),
+            width < 450
+                ? AboutMeRespPage(height: availableHeight, width: width)
+                : AboutMePage(height: availableHeight, width: width),
+            KnowledgeRespPage(height: availableHeight, width: width),
+            FindMeRespPage(height: availableHeight, width: width),
+            GitStatusRespPage(height: availableHeight, width: width),
+            StudyNowRespPage(height: availableHeight, width: width),
+            ProjectRespPage(height: availableHeight, width: width),
           ],
         ),
       ),

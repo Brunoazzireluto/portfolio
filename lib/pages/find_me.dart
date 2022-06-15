@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:port/components/find_card.dart';
 import "package:simple_icons/simple_icons.dart";
 
-class FindMePage extends StatelessWidget {
-  final double Height;
-  final double Width;
-  const FindMePage({Key? key, required this.Width, required this.Height})
+class FindMeRespPage extends StatelessWidget {
+  final double height;
+  final double width;
+  const FindMeRespPage({Key? key, required this.width, required this.height})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: Height,
-        width: Width,
+        height: height,
+        width: width,
         color: Theme.of(context).colorScheme.tertiary,
         child: Column(
           children: [

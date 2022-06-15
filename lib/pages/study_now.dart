@@ -3,17 +3,17 @@ import 'package:simple_icons/simple_icons.dart';
 
 import '../components/know_card.dart';
 
-class StudyNowPage extends StatelessWidget {
-  final double Height;
-  final double Width;
-  const StudyNowPage({Key? key, required this.Height, required this.Width})
+class StudyNowRespPage extends StatelessWidget {
+  final double height;
+  final double width;
+  const StudyNowRespPage({Key? key, required this.height, required this.width})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: Height,
-        width: Width,
+        height: height,
+        width: width,
         color: Theme.of(context).colorScheme.onTertiary,
         child: Column(children: [
           Padding(
@@ -25,8 +25,8 @@ class StudyNowPage extends StatelessWidget {
             )),
           ),
           SizedBox(
-            width: Width,
-            height: Height / 3,
+            width: width,
+            height: height / 3,
             child: GridView.count(
               physics: const NeverScrollableScrollPhysics(),
               crossAxisCount: 3,
@@ -55,8 +55,8 @@ class StudyNowPage extends StatelessWidget {
             )),
           ),
           SizedBox(
-            width: Width,
-            height: Height / 3,
+            width: width,
+            height: height / 3,
             child: GridView.count(
               physics: const NeverScrollableScrollPhysics(),
               crossAxisCount: 3,

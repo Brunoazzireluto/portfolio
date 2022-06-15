@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:port/components/project_card.dart';
 
-class ProjectPage extends StatelessWidget {
+class ProjectRespPage extends StatelessWidget {
   final double height;
   final double width;
-  const ProjectPage({Key? key, required this.height, required this.width})
+  const ProjectRespPage({Key? key, required this.height, required this.width})
       : super(key: key);
 
   @override

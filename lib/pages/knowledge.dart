@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:port/components/know_card.dart';
 
-class KnowledgePage extends StatelessWidget {
-  final double Height;
-  final double Width;
-  const KnowledgePage({Key? key, required this.Height, required this.Width})
+class KnowledgeRespPage extends StatelessWidget {
+  final double height;
+  final double width;
+  const KnowledgeRespPage({Key? key, required this.height, required this.width})
       : super(key: key);
 
   @override
@@ -12,8 +12,8 @@ class KnowledgePage extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: Width,
-          height: Height / 8,
+          width: width,
+          height: height / 8,
           padding: const EdgeInsets.symmetric(vertical: 10),
           child: Center(
               child: Text(
@@ -22,8 +22,8 @@ class KnowledgePage extends StatelessWidget {
           )),
         ),
         SizedBox(
-            height: Height / 2,
-            width: Width,
+            height: height / 2,
+            width: width,
             child: GridView.count(
               physics: const NeverScrollableScrollPhysics(),
               crossAxisCount: 4,
@@ -84,8 +84,8 @@ class KnowledgePage extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 20),
           child: SizedBox(
-            width: Width,
-            height: Height / 4,
+            width: width,
+            height: height / 4,
             child: Image.network(
                 'https://media4.giphy.com/media/dMLmQfCO7lCA2gX3tw/giphy.gif?cid=790b76119a32c7e1cde9ec2e4419478dd501ee0171e1bfbf&rid=giphy.gif&ct=s'),
           ),
